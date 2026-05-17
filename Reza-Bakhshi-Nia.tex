@@ -1,0 +1,168 @@
+%-------------------------
+% Resume in Latex
+% Author : Reza Bakhshi Nia
+%------------------------
+
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[pdftex, hidelinks]{hyperref}
+\usepackage{fontawesome5}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\ 
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabularx}{\textwidth}{Xr}
+  \textbf{\Large Reza Bakhshi Nia} & \textbf{Contact Information} \\
+  \faLinkedin\ \href{https://linkedin.com/in/RezaBakhshiNia}{LinkedIn} & \faEnvelope\ \href{mailto:reza.bakhshi1381r@gmail.com}{reza.bakhshi1381r@gmail.com} \\
+  \faGithub\ \href{https://github.com/RezaBakhshiNia}{GitHub} & \faPhone\ +98-923-136-2715 \\
+  \faStackOverflow\ \href{https://stackoverflow.com/users/22897292/reza-bakhshi-nia}{Stack Overflow} &
+\end{tabularx}
+
+%-----------SKILLS-----------------
+\section{Skills}
+\resumeSubHeadingListStart
+
+\resumeItem{Languages \& Core}
+{JavaScript (ES6+), TypeScript, HTML5, CSS3}
+
+\resumeItem{Frameworks \& Libraries}
+{React.js, Next.js, Redux Toolkit, RTK Query, React Query}
+
+\resumeItem{Architecture \& Build Tools}
+{Micro-Frontends (Module Federation), Webpack, Vite.js, Rollup, Monorepo Management}
+
+\resumeItem{Advanced Web Technologies}
+{WebSockets, HTML5 Canvas API, Web Workers, IndexedDB (Dexie.js), Electron.js}
+
+\resumeItem{UI Engineering \& Visualization}
+{Tailwind CSS, Material-UI, Leaflet.js, Chart.js, Highcharts}
+
+\resumeItem{DevOps \& Monitoring}
+{Git, CI/CD, Verdaccio, Sentry, Performance Profiling}
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Soroush Hamrah}{On-site}
+      {Front-End Software Engineer}{Dec 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Micro-Frontend Architecture}
+          {Spearheaded the migration of a monolithic frontend to a Micro-Frontend architecture using \textbf{Webpack Module Federation}, enabling independent deployment life-cycles and reducing build times by 60\%.}
+        \resumeItem{Build Pipeline Optimization}
+          {Engineered scalable build tools using \textbf{Vite.js} for rapid local development and \textbf{Rollup} for internal UI package bundling, significantly improving Developer Experience (DX).}
+        \resumeItem{CI/CD \& Package Management}
+          {Automated internal package distribution by integrating Verdaccio within CI/CD pipelines, streamlining updates across 5+ micro-applications.}
+        \resumeItem{Legacy System Integration}
+          {Architected bridging solutions between modern React ecosystems and legacy JSF/jQuery applications, ensuring seamless data flow and zero downtime during incremental modernizations.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Space Omid}{On-site}
+      {Front-End Software Engineer}{Oct 2023 -- Dec 2024}
+      \resumeItemListStart
+        \resumeItem{Real-Time \& Geospatial Systems}
+          {Architected low-latency tracking features handling [e.g., 1000+] concurrent events per second using \textbf{WebSockets} (Socket-Cluster) and interactive mapping via \textbf{Leaflet.js}.}
+        \resumeItem{High-Performance UI}
+          {Engineered complex pixel manipulation tools utilizing the HTML5 \textbf{Canvas API}, bypassing DOM rendering bottlenecks to achieve smooth 60fps performance for heavy data sets.}
+        \resumeItem{Offline-First Architecture}
+          {Designed cross-platform desktop solutions using \textbf{Electron.js} and implemented robust offline caching layers with \textbf{IndexedDB}, guaranteeing continuous operation during network failures.}
+        \resumeItem{State \& Cache Management}
+          {Optimized application state and network payloads using \textbf{RTK Query} and \textbf{React Query}, reducing redundant API calls by [e.g., 30\%] and accelerating data hydration.}
+        \resumeItem{Reliability \& Monitoring}
+          {Integrated \textbf{Sentry} for real-time telemetry and error tracking, decreasing Mean Time To Resolution (MTTR) for critical frontend bugs by [e.g., 50\%].}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Maktab Sharif}{Remote}
+      {Front-End Developer}{Feb 2023 -- Oct 2023}
+      \resumeItemListStart
+        \resumeItem{Component Architecture}
+          {Developed highly reusable, accessible, and responsive React components, establishing a scalable foundation for future product iterations.}
+        \resumeItem{UI Standards}
+          {Enforced strict CSS architectures (\textbf{BEM, OOCSS}) to ensure maintainability and eliminate style bleed across large codebases.}
+        \resumeItem{Agile Delivery}
+          {Collaborated in cross-functional Agile environments, driving feature delivery from technical design to production deployment.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------OPEN SOURCE-----------------
+\section{Open Source Contributions}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Redux-Toolkit (Core State Management)}
+      {Provided architectural solutions for complex cache invalidation and state synchronization issues within the official repository. \href{https://github.com/reduxjs/redux-toolkit/issues/4451\#issuecomment-2179912495}{(View GitHub)}}
+    \resumeSubItem{React-Leaflet \& Canvas Optimization}
+      {Engineered optimized algorithms for reading pixel values directly from ImageOverlays during high-frequency mouse events, solving community-wide performance bottlenecks. \href{https://stackoverflow.com/questions/77631436/how-to-read-pixel-values-of-an-imageoverlay-in-react-leaflet-by-mousemove-event/77690771#77690771}{(View Stack Overflow)}}
+    \resumeSubItem{Mozilla Firefox (Core Rendering Engine)}
+      {Identified, documented, and reported edge-case layout rendering bugs directly to the Mozilla engineering team via Bugzilla. \href{https://bugzilla.mozilla.org/show_bug.cgi?id=1931692}{(View Bugzilla)}}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Azad University}{Iran}
+      {Bachelor of Software Engineering}{2022 -- Present}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
