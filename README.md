@@ -26,7 +26,7 @@ A clean, **ATS-friendly** LaTeX resume template designed specifically for **soft
 
 ## 📸 Preview
 
-![Resume Preview](/preview.png)
+![Resume Preview](/Reza_Bakhshi_Nia.pdf)
 
 *(Replace with actual screenshot of your compiled resume)*
 
@@ -41,5 +41,5 @@ A clean, **ATS-friendly** LaTeX resume template designed specifically for **soft
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/RezaBakhshiNia/resume-template.git
-   cd resume-template
+   git clone https://github.com/RezaBakhshiNia/resume.git
+   cd resume
